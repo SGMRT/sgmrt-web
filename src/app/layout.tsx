@@ -4,6 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { jsonLdSoftwareApp } from "@/lib/ldjson";
 import { baseOpenGraph } from "@/lib/seo";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -58,7 +59,10 @@ export default function RootLayout({
                     }}
                 />
             </head>
-            <body className="bg-[#111111] text-white">{children}</body>
+            <body className="bg-[#111111] text-white">
+                {children}
+                <SpeedInsights />
+            </body>
         </html>
     );
 }
