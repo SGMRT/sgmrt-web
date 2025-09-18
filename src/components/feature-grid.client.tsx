@@ -9,12 +9,12 @@ export default function FeatureGridClient() {
             <FeatureCard
                 icon={Map}
                 title="코스 러닝"
-                desc="다른 사람의 러닝 코스를 따라 달리며 새로운 경험을 만나보세요"
+                desc="다른 러너들의 실제 러닝 코스를 선택하고 그대로 달려요."
             />
             <FeatureCard
                 icon={Activity}
                 title="고스트 러닝"
-                desc="AI, 과거의 나와 실시간으로 경쟁하며 달려보세요"
+                desc="AI, 과거의 나의 기록을 고스트로 소환해 실시간 경쟁하며 달려보세요"
             />
             <FeatureCard
                 icon={Zap}

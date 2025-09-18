@@ -138,7 +138,7 @@ export default function GhostRunnerLanding() {
                             경쟁한다
                         </h1>
                         <p className="mt-4 text-white/70 max-w-xl">
-                            AI·나·다른 러너의 기록을 고스트로 소환해 실시간으로
+                            AI·과거의 나의 기록을 고스트로 소환해 실시간으로
                             겨룰 수 있는 몰입형 러닝 앱. 코스 추천부터
                             음성/메트로놈 피드백까지, 지루할 틈이 없어요.
                         </p>
@@ -294,12 +294,12 @@ export default function GhostRunnerLanding() {
                     <FeatureCard
                         icon={Map}
                         title="코스 러닝"
-                        desc="다른 러너의 실제 기록을 기반으로 코스를 선택하고 그대로 달려요. Mapbox로 정밀한 경로 안내."
+                        desc="다른 러너들의 실제 러닝 코스를 선택하고 그대로 달려요."
                     />
                     <FeatureCard
                         icon={Activity}
                         title="고스트 러닝"
-                        desc="AI/과거 나/다른 러너를 고스트로 소환해 실시간 격차(m)와 리더를 확인."
+                        desc="AI/과거의 나의 기록을 고스트로 소환해 실시간 격차를 확인."
                     />
                     <FeatureCard
                         icon={Timer}

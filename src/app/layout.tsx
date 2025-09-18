@@ -5,6 +5,7 @@ import "./globals.css";
 import { jsonLdSoftwareApp } from "@/lib/ldjson";
 import { baseOpenGraph } from "@/lib/seo";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -14,9 +15,9 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
-    title: "GhostRunner — 고스트와 함께 달려라",
+    title: "GhostRunner",
     description:
-        "AI·과거 나·다른 러너 기록을 고스트로 소환해 실시간 경쟁하는 몰입형 러닝 앱",
+        "AI·과거 나의 기록을 고스트로 소환해 실시간 경쟁하는 몰입형 러닝 앱",
     keywords: ["러닝", "고스트", "메트로놈", "페이스메이커", "코스"],
     alternates: { canonical: "/" },
     openGraph: baseOpenGraph(),
@@ -62,6 +63,7 @@ export default function RootLayout({
             <body className="bg-[#111111] text-white">
                 {children}
                 <SpeedInsights />
+                <Analytics />
             </body>
         </html>
     );
