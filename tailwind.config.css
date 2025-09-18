@@ -1,0 +1,14 @@
+
+export default {
+    content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
+    theme: {
+      extend: {
+        colors: {
+          brand: { DEFAULT: "#E2FF00", bg: "#111111" },
+        },
+        fontFamily: { sans: ["var(--font-inter)"] },
+      },
+    },
+    plugins: [],
+  };
+  
