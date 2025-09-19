@@ -5,14 +5,16 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import FeatureGridClient from "@/components/feature-grid.client";
 import { ArrowRight, MapPin, Trophy, Users } from "lucide-react";
-import HeroPhonePreview from "@/components/HeroPhonePreview";
+import HeroPhonePreview from "@/components/hero-phone-preview";
+import LandingAnalytics from "@/components/landing-analytics.client";
 
 export default function Page() {
     return (
         <div className="min-h-screen w-full bg-[#111111] text-white selection:bg-[#E2FF00] selection:text-black">
             <Header />
             <main id="main">
-                <header className="relative overflow-hidden">
+                <LandingAnalytics />
+                <header id="hero" className="relative overflow-hidden">
                     <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_20%_10%,rgba(226,255,0,0.18),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(226,255,0,0.12),transparent_45%)]" />
                     <Section className="py-16 md:py-28 grid md:grid-cols-2 gap-10 items-center">
                         <div>
@@ -33,6 +35,7 @@ export default function Page() {
                             </p>
                             <div className="mt-8 flex flex-wrap items-center gap-4">
                                 <a
+                                    id="cta-hero"
                                     href="#download"
                                     className="inline-flex items-center gap-2 rounded-2xl bg-[#E2FF00] px-5 py-3 text-black font-semibold"
                                 >
@@ -192,7 +195,10 @@ export default function Page() {
                             <p className="mt-3 text-white/70">
                                 앱을 설치하고 첫 고스트와 경쟁을 시작하세요.
                             </p>
-                            <div className="mt-6 flex justify-center">
+                            <div
+                                id="store-buttons"
+                                className="mt-6 flex justify-center"
+                            >
                                 <StoreButtons />
                             </div>
                             <p className="text-xs mt-3 text-white/30">

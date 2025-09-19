@@ -6,6 +6,7 @@ import { jsonLdSoftwareApp } from "@/lib/ldjson";
 import { baseOpenGraph } from "@/lib/seo";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import AmplitudeBootstrap from "@/components/amplitude_bootstrap";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -39,11 +40,13 @@ export const viewport: Viewport = {
     initialScale: 1,
 };
 
-export default function RootLayout({
+export default async function RootLayout({
     children,
 }: {
     children: React.ReactNode;
 }) {
+    const appVersion = process.env.NEXT_PUBLIC_APP_VERSION;
+
     return (
         <html lang="ko" className={inter.variable} suppressHydrationWarning>
             <head>
@@ -61,6 +64,7 @@ export default function RootLayout({
                 />
             </head>
             <body className="bg-[#111111] text-white">
+                <AmplitudeBootstrap appVersion={appVersion} />
                 {children}
                 <SpeedInsights />
                 <Analytics />
