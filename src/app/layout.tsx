@@ -27,10 +27,7 @@ export const metadata: Metadata = {
         title: "GhostRunner",
         description: "고스트와 함께 달리는 새로운 러닝 경험",
     },
-    icons: {
-        icon: "/icon.png",
-        apple: "/apple-touch-icon.png",
-    },
+    icons: "/favicon.ico",
 };
 
 export const viewport: Viewport = {
