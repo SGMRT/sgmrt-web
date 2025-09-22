@@ -7,6 +7,7 @@ import { baseOpenGraph } from "@/lib/seo";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import AmplitudeBootstrap from "@/components/amplitude_bootstrap";
+import Head from "next/head";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -46,7 +47,7 @@ export default async function RootLayout({
 
     return (
         <html lang="ko" className={inter.variable} suppressHydrationWarning>
-            <head>
+            <Head>
                 {/* Preconnects */}
                 {/* <link
                     rel="preconnect"
@@ -59,7 +60,8 @@ export default async function RootLayout({
                         __html: JSON.stringify(jsonLdSoftwareApp()),
                     }}
                 />
-            </head>
+                <link rel="icon" href="/favicon.ico"></link>
+            </Head>
             <body className="bg-[#111111] text-white">
                 <AmplitudeBootstrap appVersion={appVersion} />
                 {children}
