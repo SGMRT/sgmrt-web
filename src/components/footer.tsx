@@ -13,7 +13,7 @@ const Footer = () => (
                     height={24}
                 />
                 <span className="text-sm text-white/70">
-                    © {new Date().getFullYear()} GhostRunner
+                    © {new Date().getFullYear()} 고스트러너
                 </span>
             </div>
             <div className="flex items-center gap-6 text-sm text-white/60">

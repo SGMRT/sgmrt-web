@@ -100,7 +100,7 @@ export default function GhostRunnerLanding() {
                     <div className="flex items-center gap-3">
                         <div className="h-8 w-8 rounded-xl bg-[#E2FF00]" />
                         <span className="font-bold tracking-tight">
-                            GhostRunner
+                            고스트러너
                         </span>
                     </div>
                     <div className="hidden sm:flex items-center gap-6 text-sm text-white/80">
@@ -427,7 +427,7 @@ export default function GhostRunnerLanding() {
                     <div className="flex items-center gap-3">
                         <div className="h-6 w-6 rounded-lg bg-[#E2FF00]" />
                         <span className="text-sm text-white/70">
-                            © {new Date().getFullYear()} GhostRunner
+                            © {new Date().getFullYear()} 고스트러너
                         </span>
                     </div>
                     <div className="flex items-center gap-6 text-sm text-white/60">

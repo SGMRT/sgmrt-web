@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import LegalDoc from "../_components/LegalDoc";
 
 export const metadata: Metadata = {
-    title: "개인정보 처리방침 | GhostRunner",
+    title: "개인정보 처리방침 | 고스트러너",
     description:
-        "GhostRunner의 개인정보 처리방침입니다. 수집 항목, 이용 목적, 보관 기간, 제3자 제공, 이용자 권리 등을 안내합니다.",
+        "고스트러너의 개인정보 처리방침입니다. 수집 항목, 이용 목적, 보관 기간, 제3자 제공, 이용자 권리 등을 안내합니다.",
     alternates: { canonical: "/privacy" },
     robots: { index: true, follow: true },
 };

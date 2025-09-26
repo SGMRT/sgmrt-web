@@ -15,7 +15,7 @@ const HeroPhonePreview = () => {
             <div className="relative h-full w-full rounded-[1.7rem] overflow-hidden">
                 <Image
                     src="/images/hero.png"
-                    alt="GhostRunner 앱 실행 화면"
+                    alt="고스트러너 앱 실행 화면"
                     fill
                     className="object-cover"
                     priority

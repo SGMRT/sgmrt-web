@@ -18,7 +18,7 @@ export default async function OG() {
                     fontSize: 72,
                 }}
             >
-                GhostRunner
+                고스트러너
             </div>
         ),
         size

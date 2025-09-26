@@ -17,7 +17,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
     metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL!),
-    title: "GhostRunner",
+    title: "고스트러너",
     description:
         "AI·과거 나의 기록을 고스트로 소환해 실시간 경쟁하는 몰입형 러닝 앱",
     keywords: ["러닝", "고스트", "메트로놈", "페이스메이커", "코스"],
@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     openGraph: baseOpenGraph(),
     twitter: {
         card: "summary_large_image",
-        title: "GhostRunner",
+        title: "고스트러너",
         description: "고스트와 함께 달리는 새로운 러닝 경험",
     },
     icons: "/favicon.ico",

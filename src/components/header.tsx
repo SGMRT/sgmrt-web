@@ -1,4 +1,3 @@
-import { ArrowRight } from "lucide-react";
 import Section from "./section";
 import Image from "next/image";
 
@@ -13,7 +12,7 @@ const Header = () => (
                     width={24}
                     height={24}
                 />
-                <span className="font-bold tracking-tight">GhostRunner</span>
+                <span className="font-bold tracking-tight">고스트러너</span>
             </div>
         </Section>
     </nav>

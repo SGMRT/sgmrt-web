@@ -120,7 +120,7 @@ export default function Page() {
                                 className="text-2xl md:text-3xl font-bold"
                             >
                                 <span className="text-[#E2FF00]">
-                                    GhostRunner
+                                    고스트러너
                                 </span>
                                 가 제공하는 솔루션
                             </h2>
