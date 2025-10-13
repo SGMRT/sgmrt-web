@@ -7,6 +7,7 @@ import FeatureGridClient from "@/components/feature-grid.client";
 import { ArrowRight, MapPin, Trophy, Users } from "lucide-react";
 import HeroPhonePreview from "@/components/hero-phone-preview";
 import LandingAnalytics from "@/components/landing-analytics.client";
+import RealtimeGap from "@/components/realtime-gap";
 
 export default function Page() {
     return (
@@ -160,20 +161,7 @@ export default function Page() {
                                 </ul>
                             </div>
                             <div className="rounded-2xl border border-white/5 bg-[#151515] p-6">
-                                <div className="text-sm text-white/60">
-                                    실시간 격차
-                                </div>
-                                <div className="mt-2 h-44 rounded-xl bg-black/40 flex items-center justify-center">
-                                    <div className="text-3xl font-black tracking-tight">
-                                        <span className="text-[#E2FF00]">
-                                            -12
-                                        </span>{" "}
-                                        m
-                                    </div>
-                                </div>
-                                <p className="mt-3 text-white/70 text-sm">
-                                    리더: GHOST · 페이스 5'12" · 케이던스 176
-                                </p>
+                                <RealtimeGap />
                             </div>
                         </div>
                     </Section>
