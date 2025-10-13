@@ -85,7 +85,7 @@ export default function RealtimeGap() {
                         transition={{ duration: 0.25 }}
                         className="text-3xl font-bold"
                     >
-                        {stats.distance}km
+                        {stats.distance}
                     </motion.div>
                     <div className="text-xs text-white/50 mt-1">거리</div>
                 </div>
@@ -125,7 +125,7 @@ export default function RealtimeGap() {
                         transition={{ duration: 0.25 }}
                         className="text-3xl font-bold"
                     >
-                        {stats.cadence}spm
+                        {stats.cadence}
                     </motion.div>
                     <div className="text-xs text-white/50 mt-1">케이던스</div>
                 </div>
@@ -142,7 +142,7 @@ export default function RealtimeGap() {
                     </div>
                 </div>
                 <div>
-                    <div className="text-2xl font-bold">{stats.cal}kcal</div>
+                    <div className="text-2xl font-bold">{stats.cal}</div>
                     <div className="text-xs text-white/50 mt-1">칼로리</div>
                 </div>
                 <div>
