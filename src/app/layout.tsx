@@ -7,7 +7,6 @@ import { baseOpenGraph } from "@/lib/seo";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 import AmplitudeBootstrap from "@/components/amplitude_bootstrap";
-import Head from "next/head";
 
 const inter = Inter({
     subsets: ["latin"],
@@ -45,32 +44,22 @@ export default async function RootLayout({
 }) {
     const appVersion = process.env.NEXT_PUBLIC_APP_VERSION;
 
+    const ld = jsonLdSoftwareApp({
+        appUrl: "https://ghostrun.io",
+        appStoreUrl: "https://apps.apple.com/kr/app/ghostrunner/id6747737877",
+        priceKRW: 0,
+        instagramUrl: "https://www.instagram.com/ghostrunner.kr/",
+    });
+
     return (
         <html lang="ko" className={inter.variable} suppressHydrationWarning>
-            <Head>
-                {/* Preconnects */}
-                {/* <link
-                    rel="preconnect"
-                    href="https://cdn.amplitude.com"
-                    crossOrigin=""
-                /> */}
+            <head>
+                <link rel="icon" href="/favicon.ico" />
                 <script
                     type="application/ld+json"
-                    dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(
-                            jsonLdSoftwareApp({
-                                appUrl: "https://ghostrun.io",
-                                appStoreUrl:
-                                    "https://apps.apple.com/kr/app/ghostrunner/id6747737877",
-                                priceKRW: 0,
-                                instagramUrl:
-                                    "https://www.instagram.com/ghostrunner.kr/",
-                            })
-                        ),
-                    }}
+                    dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
                 />
-                <link rel="icon" href="/favicon.ico"></link>
-            </Head>
+            </head>
             <body className="bg-[#111111] text-white">
                 <AmplitudeBootstrap appVersion={appVersion} />
                 {children}

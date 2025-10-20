@@ -63,7 +63,6 @@ export default async function LegalDoc({
                             <time dateTime={lastUpdated}>{lastUpdated}</time>
                         </p>
                     )}
-                    <link rel="canonical" href={canonical} />
                 </header>
 
                 {/* 본문 */}
