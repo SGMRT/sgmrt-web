@@ -57,7 +57,16 @@ export default async function RootLayout({
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{
-                        __html: JSON.stringify(jsonLdSoftwareApp()),
+                        __html: JSON.stringify(
+                            jsonLdSoftwareApp({
+                                appUrl: "https://ghostrun.io",
+                                appStoreUrl:
+                                    "https://apps.apple.com/kr/app/ghostrunner/id6747737877",
+                                priceKRW: 0,
+                                instagramUrl:
+                                    "https://www.instagram.com/ghostrunner.kr/",
+                            })
+                        ),
                     }}
                 />
                 <link rel="icon" href="/favicon.ico"></link>
